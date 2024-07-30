@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../assets/css/library/bootstrap.css" />
+        <link rel="stylesheet" href="./../assets/css/global.css" />
+        <link rel="stylesheet" href="./../assets/css/informations.css" />
+        <script defer src="./../assets/js/library/jQuery.js"></script>
+        <script defer src="./../assets/js/library/popper.js"></script>
+        <script defer src="./../assets/js/library/bootstrap4-6.js"></script>
+        <script defer src="./../assets/js/index.js"></script>
+        <script defer src="./../assets/js/informations.js"></script>
+        <title>Informations</title>
+    </head>
+    <body>
+        <div class="container-fluid mt-3">
+            <!-- header -->
+            <div class="row">
+                <div class="col-2">
+                    <div class="d-flex align-items-center">
+                        <img class="logo-container" src="./../assets/img/logo.png" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>PROMO EDWM2407</h3>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary ml-2 accueil-button">Accueil</button>
+                            <button id="preferences-button" class="btn btn-primary ml-2">
+                                Préferences
+                            </button>
+                            <button id="carte-button" class="btn btn-primary ml-2">Carte</button>
+                            <button id="informations-button" class="btn btn-primary ml-2">
+                                Informations
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- informations générales -->
+            <div class="d-flex flex-column align-items-center mt-5">
+                <div><h5 class="font-weight-bold">*INFORMATIONS GENERALES*</h5></div>
+                <div>
+                    Formation du <span class="font-weight-bold">xx/xx/xxxx</span> au
+                    <span class="font-weight-bold">xx/xx/xxxx</span>
+                </div>
+                <div>Nombre d'apprenants: xx</div>
+            </div>
+
+            <!-- Description et lien -->
+            <div class="row mt-5">
+                <div class="col-1"></div>
+                <div class="col-5 mr-2">
+                    <div class="d-flex flex-column">
+                        <p>Description</p>
+                    </div>
+                    <div class="border border-dark p-3 informations-cadre">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam delectus
+                            libero harum possimus repellat nobis odio eum in architecto
+                            necessitatibus optio maxime tempore deserunt facilis quod, fuga
+                            similique cupiditate veritatis.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-5 ml-2">
+                    <div class="d-flex flex-column">
+                        <p>Liens utiles</p>
+                    </div>
+                    <div class="border border-dark p-3 informations-cadre">
+                        <div class="d-flex flex-column">
+                            <a href="https://www.w3schools.com" target="_blank">w3schools</a>
+                            <a href="https://developer.mozilla.org" target="_blank">mdn</a>
+                            <a href="https://symfony.com" target="_blank">symfony</a>
+                            <a href="https://openclassrooms.com" target="_blank">openclassrooms</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+            </div>
+            
+            <!-- Retour -->
+             <div class="d-flex justify-content-center mt-5">
+                <button class="btn btn-primary accueil-button">Retour à la page d'Accueil</button>
+             </div>
+        </div>
+    </body>
+</html>

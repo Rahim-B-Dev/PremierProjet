@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/library/bootstrap.css" />
+        <link rel="stylesheet" href="./assets/css/global.css" />
+        <link rel="stylesheet" href="./assets/css/accueil.css" />
+        <script defer src="./assets/js/library/jQuery.js"></script>
+        <script defer src="./assets/js/library/popper.js"></script>
+        <script defer src="./assets/js/library/bootstrap4-6.js"></script>
+        <script defer src="./assets/js/index.js"></script>
+        <script defer src="./assets/js/accueil.js"></script>
+        <title>Accueil</title>
+    </head>
+    <body>
+        <!-- container -->
+        <div class="container-fluid mt-3">
+            <!-- header -->
+            <div class="row">
+                <div class="col-2">
+                    <div class="d-flex align-items-center">
+                        <img class="logo-container" src="./../assets/img/logo.png" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>PROMO EDWM2407</h3>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary ml-2">Accueil</button>
+                            <button id="preferences-button" class="btn btn-primary ml-2">Préferences</button>
+                            <button id="carte-button" class="btn btn-primary ml-2">Carte</button>
+                            <button id="informations-button" class="btn btn-primary ml-2">Informations</button>
+                        </div>
+                        <div class="d-flex justify-content-end mt-3">
+                            <span class="mr-3">Type affichage :</span>
+                            <div class="form-check form-check mr-4">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio-display"
+                                    id="radio-liste"
+                                    value="option1"
+                                    checked
+                                />
+                                <label class="form-check-label" for="exampleRadios1"> Liste </label>
+                            </div>
+                            <div class="form-check mr-4">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio-display"
+                                    id="radio-cartes"
+                                    value="option2"
+                                />
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Cartes
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <h4>Liste des apprenants</h4>
+
+            <div class="row">
+                <div class="col-8">
+                    <table class="table table-striped table-hover">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">First</th>
+                                <th scope="col">Last</th>
+                                <th scope="col">Handle</th>
+                                <th scope="col"></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Mark</td>
+                                <td>Otto</td>
+                                <td>@mdo</td>
+                                <td>
+                                    <a href="#">Détail</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Jacob</td>
+                                <td>Thornton</td>
+                                <td>@fat</td>
+                                <td>
+                                    <a href="#">Détail</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>Larry</td>
+                                <td>the Bird</td>
+                                <td>@twitter</td>
+                                <td>
+                                    <a href="#">Détail</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
