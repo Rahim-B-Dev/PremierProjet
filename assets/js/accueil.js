@@ -1,6 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
-
     // Lecture des paramètres sauvegardés dans le localStorage
     const savedTheme = localStorage.getItem("theme");
     const savedDisplay = localStorage.getItem("display");
@@ -17,7 +15,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Sélection de la table
     const tableContainer = document.querySelector("table");
 
-    // Sélection du radio bouton liste 
+    // Sélection du radio bouton liste
     const radioListe = document.querySelector("#radio-liste");
 
     // Sélection du radio bouton cartes
@@ -43,10 +41,9 @@ document.addEventListener("DOMContentLoaded", function () {
         .then((data) => {
             const promoInfo = data.promoInfo;
             const promoNom = promoInfo.nom;
-            document.querySelector('#nomPromo').innerText = promoNom;
+            document.querySelector("#nomPromo").innerText = promoNom;
 
             const apprenants = promoInfo.apprenants;
-
 
             // Création des nouvelles lignes avec les données du JSON
             apprenants.forEach((apprenant) => {
@@ -111,7 +108,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 detailButton.setAttribute("data-ville", apprenant.ville);
                 detailButton.setAttribute("data-anecdotes", apprenant.anecdotes);
 
-
                 // Ajout des éléments dans le card-body
                 cardBody.appendChild(nomText);
                 cardBody.appendChild(prenomText);
@@ -130,40 +126,36 @@ document.addEventListener("DOMContentLoaded", function () {
             console.error("Erreur lors de la récupération du fichier JSON:", error);
         });
 
-    // A l'ouverture de la modale 
-    $('#detailModal').on('show.bs.modal', function (event) {
+    // A l'ouverture de la modale
+    $("#detailModal").on("show.bs.modal", function (event) {
         // Récuperation des données passés par le bouton
         const button = event.relatedTarget;
-        const nom = button.getAttribute('data-nom');
-        const prenom = button.getAttribute('data-prenom');
-        const ville = button.getAttribute('data-ville');
-        const avatar = button.getAttribute('data-avatar');
-        const anecdotes = button.getAttribute('data-anecdotes');
+        const nom = button.getAttribute("data-nom");
+        const prenom = button.getAttribute("data-prenom");
+        const ville = button.getAttribute("data-ville");
+        const avatar = button.getAttribute("data-avatar");
+        const anecdotes = button.getAttribute("data-anecdotes");
 
         // Ajout des valeurs dans la modale
-        document.querySelector('#nom').innerText = nom;
-        document.querySelector('#prenom').innerText = prenom;
-        document.querySelector('#ville').innerText = ville;
-        document.querySelector('#anecdotes').innerText = anecdotes;
-        document.querySelector('#avatar').setAttribute('src',`./assets/img/${avatar}`)
-
-      })
+        document.querySelector("#nom").innerText = nom;
+        document.querySelector("#prenom").innerText = prenom;
+        document.querySelector("#ville").innerText = ville;
+        document.querySelector("#anecdotes").innerText = anecdotes;
+        document.querySelector("#avatar").setAttribute("src", `./assets/img/${avatar}`);
+    });
 
     // Fonction pour afficher la table ou les cartes en fonction du bouton radio
     function updateDisplay() {
-
         // vérifie si radioliste est séléctionné
         if (radioListe.checked) {
-            
             // affiche la table
             tableContainer.classList.remove("d-none");
 
             // cache les cards
             cardsContainer.classList.add("d-none");
 
-        // sinon vérifie si radio carte est séléctionné
+            // sinon vérifie si radio carte est séléctionné
         } else if (radioCartes.checked) {
-
             // cache la table
             tableContainer.classList.add("d-none");
 

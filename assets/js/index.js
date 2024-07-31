@@ -1,5 +1,4 @@
 document.addEventListener("DOMContentLoaded", function () {
-
     // Import du fichier global css
     const globalCss = document.querySelector("#globalCss");
 
