@@ -1,11 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>preferences</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../assets/css/library/bootstrap.css" />
+        <link rel="stylesheet" href="./../assets/css/global.css" />
+        <link rel="stylesheet" href="./../assets/css/preferences.css" />
+        <script defer src="./../assets/js/library/jQuery.js"></script>
+        <script defer src="./../assets/js/library/popper.js"></script>
+        <script defer src="./../assets/js/library/bootstrap4-6.js"></script>
+        <script defer src="./../assets/js/index.js"></script>
+        <script defer src="./../assets/js/preferences.js"></script>
+        <title>preferences</title>
+    </head>
+    <body>
+        <div class="container-fluid mt-3">
+            <!-- header -->
+            <div class="row">
+                <div class="col-2">
+                    <div class="d-flex align-items-center">
+                        <img class="logo-container" src="./../assets/img/logo.png" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>PROMO EDWM2407</h3>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary ml-2 accueil-button">Accueil</button>
+                            <button id="preferences-button" class="btn btn-primary ml-2">
+                                Préferences
+                            </button>
+                            <button id="carte-button" class="btn btn-primary ml-2">Carte</button>
+                            <button id="informations-button" class="btn btn-primary ml-2">
+                                Informations
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-4"></div>
+            <div class="col-4">
+                <div class="d-flex flex-column">
+                    <div class="d-flex justify-content-center my-4">
+                        <h4>Préférences du site</h4>
+                    </div>
+
+                    <div class="d-flex justify-content-between my-4">
+                        <div>
+                            <span>Thème du site</span>
+                        </div>
+                        <div>
+                            <select class="form-control">
+                                <option value="1">Clair</option>
+                                <option value="2">Sombre</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-between my-4">
+                        <div>
+                            <span>Format d'affichage de la liste des apprenants</span>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div class="form-check form-check mr-4">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio-display"
+                                    id="radio-liste"
+                                    value="option1"
+                                    checked
+                                />
+                                <label class="form-check-label" for="exampleRadios1"> Liste </label>
+                            </div>
+                            <div class="form-check mr-4">
+                                <input
+                                    class="form-check-input"
+                                    type="radio"
+                                    name="radio-display"
+                                    id="radio-cartes"
+                                    value="option2"
+                                />
+                                <label class="form-check-label" for="exampleRadios1">
+                                    Cartes
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-around mt-4">
+                        <div>
+                            <button class="btn btn-primary accueil-button">Retour à la page d'Accueil</button>
+                        </div>
+                        <div>
+                            <button class="btn btn-primary">Enregistrer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4"></div>
+        </div>
+    </body>
 </html>
