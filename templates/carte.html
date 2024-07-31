@@ -1,11 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carte</title>
-</head>
-<body>
-    <h1>carte</h1>
-</body>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../assets/css/library/bootstrap.css" />
+        <link id="globalCss" rel="stylesheet" href="./../assets/css/global.css" />
+        <link rel="stylesheet" href="./../assets/css/carte.css" />
+        <script defer src="./../assets/js/library/jQuery.js"></script>
+        <script defer src="./../assets/js/library/popper.js"></script>
+        <script defer src="./../assets/js/library/bootstrap4-6.js"></script>
+        <script defer src="./../assets/js/index.js"></script>
+        <script defer src="./../assets/js/carte.js"></script>
+        <title>Carte</title>
+    </head>
+    <body>
+        <div class="container-fluid mt-3">
+            <div class="row">
+                <div class="col-2">
+                    <div class="d-flex align-items-center">
+                        <img class="logo-container" src="./../assets/img/logo.png" />
+                    </div>
+                </div>
+                <div class="col-4">
+                    <h3>PROMO EDWM2407</h3>
+                </div>
+                <div class="col-6">
+                    <div class="d-flex flex-column">
+                        <div class="d-flex justify-content-end">
+                            <button class="btn btn-primary ml-2 accueil-button">Accueil</button>
+                            <button id="preferences-button" class="btn btn-primary ml-2">
+                                Préferences
+                            </button>
+                            <button id="carte-button" class="btn btn-primary ml-2">Carte</button>
+                            <button id="informations-button" class="btn btn-primary ml-2">
+                                Informations
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
 </html>

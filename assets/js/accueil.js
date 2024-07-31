@@ -23,11 +23,6 @@ document.addEventListener("DOMContentLoaded", function () {
     // Sélection du radio bouton cartes
     const radioCartes = document.querySelector("#radio-cartes");
 
-
-    // // Appliquer les valeurs sauvegardées au formulaire si elles existent
-    // if (savedTheme) {
-    // }
-
     // Appliquer l'affichage sauvegardé
     if (savedDisplay === "liste") {
         radioListe.checked = true;
