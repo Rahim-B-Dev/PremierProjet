@@ -5,7 +5,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Lecture des paramètres sauvegardés dans le localStorage
     const savedTheme = localStorage.getItem("theme");
-    console.log(savedTheme);
 
     // Appliquer les valeurs sauvegardées au formulaire si elles existent
     if (savedTheme) {

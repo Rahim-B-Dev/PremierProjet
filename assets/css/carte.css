@@ -1,0 +1,10 @@
+#map{
+    width: 60%;
+    height: 65vh;
+}
+
+.fa-icon {
+    font-size: 24px; /* Taille de l'icône FontAwesome */
+    color: red; /* Couleur de l'icône */
+    text-align: center;
+}

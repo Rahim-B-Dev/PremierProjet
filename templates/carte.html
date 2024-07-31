@@ -3,19 +3,25 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./../assets/css/library/fontawesome.css" />
         <link rel="stylesheet" href="./../assets/css/library/bootstrap.css" />
+        <link rel="stylesheet" href="./../assets/css/library/leaflet.css" />
         <link id="globalCss" rel="stylesheet" href="./../assets/css/global.css" />
         <link rel="stylesheet" href="./../assets/css/carte.css" />
         <script defer src="./../assets/js/library/jQuery.js"></script>
         <script defer src="./../assets/js/library/popper.js"></script>
         <script defer src="./../assets/js/library/bootstrap4-6.js"></script>
+        <script defer src="./../assets/js/library/fontawesome.js"></script>
+        <script defer src="./../assets/js/library/leaflet.js"></script>
         <script defer src="./../assets/js/index.js"></script>
         <script defer src="./../assets/js/carte.js"></script>
         <title>Carte</title>
     </head>
     <body>
-        <div class="container-fluid mt-3">
-            <div class="row">
+        <div class="container-fluid my-3">
+
+            <!-- Header -->
+            <div class="row mb-5">
                 <div class="col-2">
                     <div class="d-flex align-items-center">
                         <img class="logo-container" src="./../assets/img/logo.png" />
@@ -39,6 +45,15 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Carte -->
+             <div class="d-flex flex-column align-items-center">
+                <div class="mb-3">Carte</div>
+                <div id="map" class="mb-3"></div>
+                <div>
+                    <button class="btn btn-primary accueil-button">Retour à la page d'Accueil</button>
+                </div>
+             </div>
         </div>
     </body>
 </html>
