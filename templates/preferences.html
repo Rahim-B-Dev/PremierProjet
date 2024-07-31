@@ -55,9 +55,9 @@
                             <span>Thème du site</span>
                         </div>
                         <div>
-                            <select class="form-control">
-                                <option value="1">Clair</option>
-                                <option value="2">Sombre</option>
+                            <select id="theme-select" class="form-control">
+                                <option value="clair">Clair</option>
+                                <option value="sombre">Sombre</option>
                             </select>
                         </div>
                     </div>
@@ -73,7 +73,7 @@
                                     type="radio"
                                     name="radio-display"
                                     id="radio-liste"
-                                    value="option1"
+                                    value="liste"
                                     checked
                                 />
                                 <label class="form-check-label" for="exampleRadios1"> Liste </label>
@@ -84,7 +84,7 @@
                                     type="radio"
                                     name="radio-display"
                                     id="radio-cartes"
-                                    value="option2"
+                                    value="cartes"
                                 />
                                 <label class="form-check-label" for="exampleRadios1">
                                     Cartes
@@ -98,7 +98,7 @@
                             <button class="btn btn-primary accueil-button">Retour à la page d'Accueil</button>
                         </div>
                         <div>
-                            <button class="btn btn-primary">Enregistrer</button>
+                            <button id="save-button" class="btn btn-primary">Enregistrer</button>
                         </div>
                     </div>
                 </div>
