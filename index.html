@@ -30,9 +30,13 @@
                     <div class="d-flex flex-column">
                         <div class="d-flex justify-content-end">
                             <button class="btn btn-primary ml-2">Accueil</button>
-                            <button id="preferences-button" class="btn btn-primary ml-2">Préferences</button>
+                            <button id="preferences-button" class="btn btn-primary ml-2">
+                                Préferences
+                            </button>
                             <button id="carte-button" class="btn btn-primary ml-2">Carte</button>
-                            <button id="informations-button" class="btn btn-primary ml-2">Informations</button>
+                            <button id="informations-button" class="btn btn-primary ml-2">
+                                Informations
+                            </button>
                         </div>
                         <div class="d-flex justify-content-end mt-3">
                             <span class="mr-3">Type affichage :</span>
@@ -64,8 +68,9 @@
                 </div>
             </div>
 
-            <h4>Liste des apprenants</h4>
+            <h4 class="mt-5">Liste des apprenants</h4>
 
+            <!-- Affichage listes -->
             <div class="row">
                 <div class="col-8">
                     <table class="table table-striped table-hover">
@@ -77,35 +82,13 @@
                                 <th scope="col"></th>
                             </tr>
                         </thead>
-                        <tbody>
-                            <tr>
-                                <td>Mark</td>
-                                <td>Otto</td>
-                                <td>@mdo</td>
-                                <td>
-                                    <a href="#">Détail</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Jacob</td>
-                                <td>Thornton</td>
-                                <td>@fat</td>
-                                <td>
-                                    <a href="#">Détail</a>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td>Larry</td>
-                                <td>the Bird</td>
-                                <td>@twitter</td>
-                                <td>
-                                    <a href="#">Détail</a>
-                                </td>
-                            </tr>
-                        </tbody>
+                        <tbody></tbody>
                     </table>
                 </div>
             </div>
+
+            <!-- Affichage carte -->
+            <div id="apprenants-cards" class="row"></div>
         </div>
     </body>
 </html>
