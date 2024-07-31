@@ -41,7 +41,12 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch(jsonPath)
         .then((response) => response.json())
         .then((data) => {
-            const apprenants = data.apprenants;
+            const promoInfo = data.promoInfo;
+            const promoNom = promoInfo.nom;
+            document.querySelector('#nomPromo').innerText = promoNom;
+
+            const apprenants = promoInfo.apprenants;
+
 
             // Création des nouvelles lignes avec les données du JSON
             apprenants.forEach((apprenant) => {

@@ -1,28 +1,35 @@
 {
-    "apprenants": [
-        {
-            "id": 1,
-            "nom": "Doe",
-            "prenom": "John",
-            "ville": "Rennes",
-            "avatar": "avatar1.jpg",
-            "anecdotes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore harum, doloremque, cupiditate dignissimos fuga aut animi inventore libero velit, quas veritatis eaque et pariatur? Maiores, tenetur quis quisquam odio quod enim esse. Repellat itaque ea velit voluptatum delectus laudantium, expedita voluptate fugiat deserunt corrupti, dolorum dicta amet esse qui?",
-            "coordonnees": {
-                "latitude": "48.0389236",
-                "longitude": "-1.6923804"
+    "promoInfo": {
+        "nom": "EDWM2407",
+        "debut": "28/06/2024",
+        "fin": "14/02/2025",
+        "description": "Préparation au titre professionnel :“Développeur web et web mobile”. Diplôme reconnu par l’État Niveau 5 (Niveau Bac +2) inscrit au RNCP (arrêté du 23/04/2023, J.O du 13/05/2023) code RNCP : RNCP37674, titre certifié par le ministère du travail.",
+        "nbrApprenants": "20",
+        "apprenants": [
+            {
+                "id": 1,
+                "nom": "Doe",
+                "prenom": "John",
+                "ville": "Rennes",
+                "avatar": "avatar1.jpg",
+                "anecdotes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore harum, doloremque, cupiditate dignissimos fuga aut animi inventore libero velit, quas veritatis eaque et pariatur? Maiores, tenetur quis quisquam odio quod enim esse. Repellat itaque ea velit voluptatum delectus laudantium, expedita voluptate fugiat deserunt corruption, dolorum dicta amet esse qui?",
+                "coordonnees": {
+                    "latitude": "48.0389236",
+                    "longitude": "-1.6923804"
+                }
+            },
+            {
+                "id": 2,
+                "nom": "Doe",
+                "prenom": "Jane",
+                "ville": "Nantes",
+                "avatar": "avatar2.jpg",
+                "anecdotes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore harum, doloremque, cupiditate dignissimos fuga aut animi inventore libero velit, quas veritatis eaque et pariatur? Maiores, tenetur quis quisquam odio quod enim esse. Repellat itaque ea velit voluptatum delectus laudantium, expedita voluptate fugiat deserunt corrupti, dolorum dicta amet esse qui?",
+                "coordonnees": {
+                    "latitude": "47.2258527",
+                    "longitude": "-1.6178441"
+                }
             }
-        },
-        {
-            "id": 2,
-            "nom": "Doe",
-            "prenom": "Jane",
-            "ville": "Nantes",
-            "avatar": "avatar2.jpg",
-            "anecdotes": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident tempore harum, doloremque, cupiditate dignissimos fuga aut animi inventore libero velit, quas veritatis eaque et pariatur? Maiores, tenetur quis quisquam odio quod enim esse. Repellat itaque ea velit voluptatum delectus laudantium, expedita voluptate fugiat deserunt corrupti, dolorum dicta amet esse qui?",
-            "coordonnees": {
-                "latitude": "47.2258527",
-                "longitude": "-1.6178441"
-            }
-        }
-    ]
+        ]
+    }
 }

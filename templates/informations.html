@@ -23,7 +23,7 @@
                     </div>
                 </div>
                 <div class="col-4">
-                    <h3>PROMO EDWM2407</h3>
+                    <h3>PROMO <span id="nomPromo"></span></h3>
                 </div>
                 <div class="col-6">
                     <div class="d-flex flex-column">
@@ -45,10 +45,10 @@
             <div class="d-flex flex-column align-items-center mt-5">
                 <div><h5 class="font-weight-bold">*INFORMATIONS GENERALES*</h5></div>
                 <div>
-                    Formation du <span class="font-weight-bold">xx/xx/xxxx</span> au
-                    <span class="font-weight-bold">xx/xx/xxxx</span>
+                    Formation du <span id="debut" class="font-weight-bold"></span> au
+                    <span id="fin" class="font-weight-bold"></span>
                 </div>
-                <div>Nombre d'apprenants: xx</div>
+                <div>Nombre d'apprenants: <span id="nbrApprenants"></span></div>
             </div>
 
             <!-- Description et lien -->
@@ -59,11 +59,7 @@
                         <p>Description</p>
                     </div>
                     <div class="border border-theme p-3 informations-cadre">
-                        <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam delectus
-                            libero harum possimus repellat nobis odio eum in architecto
-                            necessitatibus optio maxime tempore deserunt facilis quod, fuga
-                            similique cupiditate veritatis.
+                        <p id="description">
                         </p>
                     </div>
                 </div>

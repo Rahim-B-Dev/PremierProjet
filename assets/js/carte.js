@@ -11,7 +11,12 @@ document.addEventListener("DOMContentLoaded", function () {
     fetch('./../data/promo.json') // Change le chemin selon l'emplacement de ton fichier JSON
         .then(response => response.json())
         .then(data => {
-            data.apprenants.forEach(apprenant => {
+            const promoInfo = data.promoInfo;
+            const promoNom = promoInfo.nom;
+            
+            document.querySelector('#nomPromo').innerText = promoNom;
+
+            promoInfo.apprenants.forEach(apprenant => {
                 const { latitude, longitude } = apprenant.coordonnees;
                 const lat = parseFloat(latitude);
                 const lng = parseFloat(longitude);
