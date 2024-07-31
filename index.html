@@ -90,5 +90,44 @@
             <!-- Affichage carte -->
             <div id="apprenants-cards" class="row"></div>
         </div>
+
+        <!-- Modal -->
+        <div
+            class="modal fade"
+            id="detailModal"
+            tabindex="-1"
+            aria-labelledby="detailModalLabel"
+            aria-hidden="true"
+        >
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-body">
+                        <div class="row mb-2">
+                            <div class="col-3">
+                                <img id="avatar" src="" alt="photo_avatar" width="120px">
+                            </div>
+                            <div class="col-9">
+                                <div class="d-flex justify-content-between">
+                                    <div class="ml-4">
+                                        <div>Nom :</div>
+                                        <div>Prénom :</div>
+                                        <div>Ville :</div>
+                                    </div>
+                                    <div>
+                                        <div id="nom"></div>
+                                        <div id="prenom"></div>
+                                        <div id="ville"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <div>Anecdotes sur l'apprenant :</div>
+                            <div id="anecdotes" class="border p-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

@@ -97,6 +97,15 @@ document.addEventListener("DOMContentLoaded", function () {
                 const detailButton = document.createElement("button");
                 detailButton.className = "btn btn-primary";
                 detailButton.textContent = "Détail";
+                detailButton.setAttribute("data-toggle", "modal");
+                detailButton.setAttribute("data-target", "#detailModal");
+
+                detailButton.setAttribute("data-avatar", apprenant.avatar);
+                detailButton.setAttribute("data-nom", apprenant.nom);
+                detailButton.setAttribute("data-prenom", apprenant.prenom);
+                detailButton.setAttribute("data-ville", apprenant.ville);
+                detailButton.setAttribute("data-anecdotes", apprenant.anecdotes);
+
 
                 // Ajout des éléments dans le card-body
                 cardBody.appendChild(nomText);
@@ -115,6 +124,25 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch((error) => {
             console.error("Erreur lors de la récupération du fichier JSON:", error);
         });
+
+    // A l'ouverture de la modale 
+    $('#detailModal').on('show.bs.modal', function (event) {
+        // Récuperation des données passés par le bouton
+        const button = event.relatedTarget;
+        const nom = button.getAttribute('data-nom');
+        const prenom = button.getAttribute('data-prenom');
+        const ville = button.getAttribute('data-ville');
+        const avatar = button.getAttribute('data-avatar');
+        const anecdotes = button.getAttribute('data-anecdotes');
+
+        // Ajout des valeurs dans la modale
+        document.querySelector('#nom').innerText = nom;
+        document.querySelector('#prenom').innerText = prenom;
+        document.querySelector('#ville').innerText = ville;
+        document.querySelector('#anecdotes').innerText = anecdotes;
+        document.querySelector('#avatar').setAttribute('src',`./assets/img/${avatar}`)
+
+      })
 
     // Fonction pour afficher la table ou les cartes en fonction du bouton radio
     function updateDisplay() {
