@@ -13,3 +13,13 @@
 .table-striped thead th:last-child {
     border-right: none;
 }
+
+@media (max-width: 768px) {
+    .header-right {
+        justify-content: center !important;
+    }
+
+    .header-right-container {
+        margin-top: 30px;
+    }
+}

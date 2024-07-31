@@ -76,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 /* Pour les cards */
                 const cardCol = document.createElement("div");
-                cardCol.className = "col-2 mb-4";
+                cardCol.className = "col-6 col-sm-6 col-md-3 col-lg-2 col-xl-2 mb-4";
 
                 const card = document.createElement("div");
                 card.className = "card";

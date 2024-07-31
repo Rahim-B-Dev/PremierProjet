@@ -10,3 +10,13 @@ body {
 .border-theme {
     border-color: #343a40 !important;
 }
+
+@media (max-width: 768px) {
+    .header-right {
+        justify-content: center !important;
+    }
+
+    .header-right-container {
+        margin-top: 30px;
+    }
+}

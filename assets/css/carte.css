@@ -8,3 +8,29 @@
     color: red; /* Couleur de l'icône */
     text-align: center;
 }
+
+
+
+@media (max-width: 1140px) {
+    #map{
+        width:80% !important;
+    }
+}
+
+@media (max-width: 960px) {
+    #map{
+        width:85% !important;
+    }
+}
+
+@media (max-width: 768px) {
+    #map{
+        width:90% !important;
+    }
+}
+
+@media (max-width: 576px) {
+    #map{
+        width:98% !important;
+    }
+}
