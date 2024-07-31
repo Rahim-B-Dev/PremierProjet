@@ -3,13 +3,20 @@
     overflow-y: auto;
 }
 
+.general-info {
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 1.25rem;
+}
+
 @media (max-width: 992px) {
-    .utils-link-container, .description-container{
+    .utils-link-container,
+    .description-container {
         margin-left: auto !important;
         margin-right: auto !important;
     }
 
-    .utils-link-container{
+    .utils-link-container {
         margin-top: 25px;
     }
 }
